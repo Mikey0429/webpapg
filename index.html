@@ -2,23 +2,41 @@
 <html>
   <head>
     <title>mikey webpage training</title>
+    
     <!--宣告css內容body背景為天藍色-->
     <style> 
       body{
         background-color:lightblue;
       }
     </style>
+    
     <!--引入檔案的方式引入css-->
     <link rel="stylesheet" href="mycss.css">
+    
   </head>
 
 <body>
   <h1>我的網頁練習</h1>
+  
+  <!--在tag中直接撰寫css -->
+  <h2 style="color: rgb(111, 0, 210);">在tag中撰寫css</h2>
+  
   <p>這是我的HTML網頁練習</p>
+  
   <!--宣告一個按鈕 把id為demo的內容 在按按鈕以後顯示為時間 -->
   <button type="button" onclick= "document.getElementById('demo').innerHTML = Date()">
     點擊顯示時間
   </button>
+
+  <button onclick="Myclick()">
+    點我 (在tag中放js實驗)
+  </button>
+  <script>
+    function Myclick(){
+      alert("執行js");
+    }
+  </script>
+  
   <!--練習引入檔案的方式引入js檔-->
   <script src="myjs.js">
   </script>
